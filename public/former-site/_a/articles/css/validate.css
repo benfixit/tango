@@ -1,0 +1,21 @@
+form.cmxform label.error, label.error {
+  display: inline-block;
+  vertical-align: top;
+  cursor: hand;
+  color: red;
+  font-style: italic;
+}
+.error-alert {
+  padding: 8px 0;
+  width: 100%;
+  color: #fff;
+  font-size: 0.85714em;
+  text-align: center;
+  border-radius: 2px;
+  display: inline-block;
+  background: #ff4949;
+  margin-bottom: 20px;
+}
+.error-alert p {
+  margin-bottom: 0;
+}

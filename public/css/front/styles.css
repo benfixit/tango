@@ -1,0 +1,1409 @@
+html, body, .row {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+@font-face {
+    font-family: "Atlas";
+    src: url("../../fonts/atlas/AtlasGrotesk-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Atlasbold";
+    src: url("../../fonts/atlas/AtlasGrotesk-Bold.otf") format("opentype");
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+    font-family: Atlas , Arial, sans-serif
+}
+
+.boast {
+    font-size: 1.3em;
+}
+
+.bg-ash {
+    background: #fafafa;
+}
+
+.special-header {
+    font-size: 0.8em;
+}
+
+.special-header::before {
+    display: inline-block;
+    content: "";
+    border-top: thin solid #ffffff;
+    width: 7em;
+    margin: 0 1.5em;
+    transform: translateY(-0.3em);
+}
+
+.sh-black::before {
+    border-top: thin solid #888888;
+}
+
+.big-special-header {
+    font-size: 0.8em;
+}
+
+.big-special-header::before {
+    display: inline-block;
+    content: "";
+    width: 7em;
+    margin: 0 1.5em;
+    transform: translateY(-0.6em);
+}
+
+.big-special-header span {
+    font-size: 2.4em;
+}
+
+.home-who-we-are {
+    padding: 3% 0 5%;
+    background: #000000;
+    color: #aaaaaa;
+}
+
+.home-who-we-are .special-header-div {
+    padding: 1%;
+}
+
+.home-who-we-are .col-sm-10 {
+    padding-left: 0;
+}
+
+.home-who-we-are .title-div {
+    color: gold;
+    border-right: thin solid #888888;
+    font-size: 2em;
+    margin: 0 4% 2% 0;
+}
+
+.home-who-we-are .content-div p {
+    font-size: 1em;
+    line-height: 1.8em;
+}
+
+.home-who-we-are .learn-more-btn {
+    border: thin solid gold;
+    border-radius: 0;
+    color: #ffffff;
+    padding: 4% 6%;
+    background: #000000;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.home-who-we-are .learn-more-btn:hover,
+.home-who-we-are .learn-more-btn:focus {
+    border: thin solid #ffffff;
+    color: gold;
+}
+
+.consulting-services {
+    padding: 3% 0 5%;
+    background: #fcfcfc;
+}
+
+.consulting-services .special-header-div {
+    padding: 1%;
+}
+
+.consulting-services .col-sm-10 {
+    padding-left: 0;
+    margin-top: 1.2%;
+}
+
+.selected-clients {
+    padding: 2% 0 6%;
+}
+
+.selected-clients .special-header-div {
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+.selected-clients .img-row .col-sm-3 {
+    padding: 3% 0 4%;
+}
+
+/********************** FOOTER ******************************/
+
+.main-footer {
+    padding: 10% 0 3%;
+    background: #000000;
+    color: #cccccc;
+}
+
+.main-footer .wrapper {
+    padding: 0;
+}
+
+.main-footer .wrapper .sect{
+    padding-left: 0;
+}
+
+.main-footer .wrapper .jobs{
+    padding-left: 4%;
+}
+
+.main-footer .wrapper h6 strong{
+    font-size: 0.8em;
+    padding-bottom: 3px;
+    border-bottom: thin solid gold;
+}
+
+.main-footer .wrapper ul li {
+    line-height: 1.8em;
+    font-size: 0.9em;
+}
+
+.main-footer .wrapper ul li a {
+    color: #cccccc;
+}
+
+.main-footer .wrapper ul li a:hover,
+.main-footer .wrapper ul li a:focus {
+    text-decoration: none;
+    color: gold;
+}
+
+.small-footer {
+    font-size: 0.8em;
+    background: #000000;
+    color: #888888;
+}
+
+.small-footer p {
+    padding: 1% 0;
+    margin: 0;
+}
+
+.small-footer a .fa {
+    color: #ffffff;
+}
+
+.small-footer ul li {
+    display: inline;
+    padding: 0 2%;
+    font-size: 1.3em;
+}
+
+.footer-request-btn, .send-brief-btn {
+    border: thin solid #888888;
+    border-radius: 0;
+    color: #000000;
+    padding: 4% 6%;
+    background: #fcfcfc;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.get-in-touch-btn {
+    border: thin solid #888888;
+    border-radius: 0;
+    color: #ffffff;
+    padding: 4% 6%;
+    background: #000000;
+    font-size: 1em;
+}
+
+.send-brief-btn {
+    padding: 5.4% 6%;
+}
+
+#toTop {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+    border: thin solid #888888;
+    border-radius: 0;
+    color: #000000;
+    padding: 0.8%;
+    background: gold;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.small-footer a {
+    color: #888888;
+    font-weight: bold;
+}
+
+.small-footer a:hover,
+.small-footer a:focus {
+    color: gold;
+    text-decoration: none;
+}
+
+/****************************** HOME PAGE **********************************/
+.home-container {
+    position: relative;
+    height: auto;
+    padding-bottom: 17%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/back-1.jpg") no-repeat;
+    background-size: auto;
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+.home-container .page-jumbo, .about-container .page-jumbo{
+    position: relative;
+    top: 100px;
+}
+
+.newsletter a{
+    color: #000000;
+}
+
+.newsletter a:hover,
+.newsletter a:focus{
+    color: gold;
+}
+
+/****************************** ABOUT PAGE *********************************/
+.about-container {
+    padding-bottom: 4%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/image-1.jpg") no-repeat;
+    background-size: auto;
+    background-position: bottom center;
+    background-attachment: fixed;
+    min-height: 450px;
+}
+
+/*************************************** COMMONS *************************************/
+.home-container .navigation .navbar ul li.active-link,
+.about-container .navigation .navbar ul li.active-link {
+    border-bottom: medium solid gold;
+}
+
+.home-container .navigation .navbar ul li a,
+.about-container .navigation .navbar ul li a {
+    color: #ffffff;
+}
+
+.home-container .page-jumbo h1,
+.about-container .page-jumbo h1,
+.service-container .page-jumbo h1{
+    color: #ffffff;
+    font-family: Atlasbold , Arial, sans-serif
+}
+
+.home-container .page-jumbo p,
+.about-container .page-jumbo p {
+    color: gold;
+}
+
+.home-container .navigation,
+.about-container .navigation,
+.service-container .navigation {
+    font-family: Atlas, Arial, sans-serif;
+}
+
+.home-container .navigation .col-11,
+.about-container .navigation .col-11,
+.service-container .navigation .col-11 {
+    margin: 0 auto;
+}
+
+.home-container .navigation .navbar,
+.about-container .navigation .navbar,
+.service-container .navigation .navbar {
+    font-size: 0.7em;
+    padding: 1% 0;
+}
+
+.home-container .navigation .navbar ul li .fa,
+.about-container .navigation .navbar ul li .fa,
+.service-container .navigation .navbar ul li .fa {
+    font-size: 1.6em;
+}
+
+.home-container .fixed-top,
+.about-container .fixed-top,
+.service-container .fixed-top {
+    background-color: transparent;
+}
+
+.page-jumbo {
+    font-family: Atlas, Arial, sans-serif;
+    padding: 4% 0 2% 0;
+}
+
+.page-jumbo .col-sm-8 {
+    border-left: thin solid #888888;
+    padding: 3% 3% 1%;
+    line-height: 2em;
+}
+
+.page-jumbo h1 {
+    line-height: 1.6em;
+    font-size: 2.8em;
+}
+
+.page-jumbo p {
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
+
+/************************************** SERVICE PAGE ************************************/
+.service-container .navigation .navbar ul li.services-nav-link {
+    font-weight: bold !important;
+    border-bottom: thin solid black !important;
+    color: black;
+}
+
+.service-container {
+    position: relative;
+    height: auto;
+    padding-bottom: 4%;
+    #background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/back.png") no-repeat;
+    background-color: gold;
+    background-size: auto;
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+.service-container .navigation .navbar ul li.active-link {
+    border-bottom: medium solid gold;
+}
+
+.service-container .navigation .navbar ul li a {
+    color: #000000;
+}
+
+.service-container .page-jumbo h1 {
+    color: #000000;
+}
+
+.service-container .page-jumbo p {
+    color: #000000;
+}
+
+.services-we-offer h4{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.services-we-offer h6{
+    font-size: 0.8em;
+}
+
+.auto-slideshow {
+    width: 50%;
+    margin: 1% auto 4% auto;
+    padding: 20px;
+}
+
+.auto-slideshow img{
+    width: 100%;
+    max-height: 100px;
+    display: block;
+}
+
+.slick-prev {
+    left: -25px;
+}
+
+.slick-prev, .slick-next {
+    font-size: 0px;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    cursor: pointer;
+    color: red !important;
+    padding: 0px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    outline: none;
+    background: transparent;
+}
+
+.service-ppp .inner-row{
+    border: thin solid #cccccc;
+    padding: 8% 0.4% 6%;
+    border-radius: 5px;
+}
+
+.service-ppp .inner-row img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.service-ppp .inner-row .fa{
+    color: #aaaaaa;
+    font-size: 1.4em;
+}
+
+.featured-projects{
+    padding: 1% 0 6%;
+}
+
+.featured-projects .outer{
+    padding: 0 2%;
+}
+
+.featured-projects .outer .left-row{
+    background: aliceblue;
+    height: 100%;
+    padding: 10% 6%;
+}
+
+.featured-projects .outer .left-row div{
+    padding: 0;
+}
+
+.featured-projects .outer .right-row{
+    background: aliceblue;
+    height: 100%;
+    padding: 10% 6%;
+    color: #000000;
+}
+
+.featured-projects .outer h3{
+    padding: 0;
+    margin-bottom: 6%;
+}
+
+.featured-projects .outer p{
+    padding: 0;
+}
+
+.featured-projects .cv-button{
+    padding: 3% 2%;
+    font-size: 0.8em;
+}
+
+.featured-projects .sign-up{
+    padding: 5% 4%;
+    font-size: 0.8em;
+}
+
+
+.what-we-have-done {
+    padding: 6% 0 1%;
+}
+
+.about-who-we-are {
+    padding: 3% 0 6%;
+    background: #ffffff;
+}
+
+.about-who-we-are .special-header {
+    color: #aaaaaa;
+}
+
+.about-who-we-are .col-sm-10 {
+    padding-left: 0;
+}
+
+.about-who-we-are .title-div {
+    color: black;
+    font-size: 1.8em;
+}
+
+.about-who-we-are .content-div {
+    line-height: 2em;
+}
+
+.meet-the-team {
+    padding: 3% 0 20%;
+    color: #ffffff;
+}
+
+.meet-the-team .title-div {
+    padding: 0;
+    margin-bottom: 2%;
+}
+
+.meet-the-team .title-div p {
+    font-size: 1.9em;
+}
+
+.meet-the-team .content-wrapper {
+    padding: 0;
+}
+
+.meet-the-team .content-wrapper .content-div {
+    padding: 0;
+}
+
+.meet-the-team .content-wrapper .cta {
+    padding: 0;
+}
+
+.meet-the-team .content-wrapper .cta a:hover,
+.meet-the-team .content-wrapper .cta a:focus{
+    text-decoration: none;
+}
+
+.meet-the-team .content-wrapper .cta a span{
+    color: #ffffff;
+}
+
+.meet-the-team .content-wrapper .cta a strong {
+    color: gold;
+}
+
+.meet-the-team .content-wrapper p {
+    font-size: 1em;
+    line-height: 1.8em;
+}
+
+.team-gallery {
+    position: relative;
+    padding: 0;
+}
+
+.team-gallery .wrapper {
+    padding: 0;
+    background: #ffffff;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    transform: translateY(-76%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.team-gallery .wrapper .outer {
+    padding: 0;
+    width: 20%;
+}
+
+.team-gallery .wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.team-gallery .wrapper .desc {
+    padding: 8% 0 0 12%;
+}
+
+.team-gallery .wrapper .desc .title {
+    margin-bottom: 1%;
+    font-size: 0.7em;
+}
+
+.team-gallery .wrapper .desc .social-links {
+    margin-bottom: 1%;
+}
+
+.team-gallery .wrapper .desc .social-links a {
+    color: #666666;
+}
+
+.mission-vision-values {
+    padding-top: 16%;
+}
+
+.mission-vision-values .special-header-div {
+    padding: 1%;
+    margin-bottom: 2%;
+}
+
+.mission-vision-values .nav-pills a {
+    color: black;
+}
+
+.mission-vision-values .nav-item a {
+    border-bottom: thin solid #cccccc;
+    border-radius: 0;
+    padding: 0;
+    padding-bottom: 6%;
+}
+
+.mission-vision-values .nav-item {
+    margin-right: 4%;
+}
+
+.mission-vision-values p {
+    font-size: 1.15em;
+}
+
+.mission-vision-values h4, .mission-vision-values .fa-twitter {
+    padding-top: 4%;
+    color: #aaaaaa;
+}
+
+.mission-vision-values p.blurred {
+    color: #aaaaaa;
+}
+
+.mission-vision-values .nav-item .active {
+    border-bottom: thin solid gold !important;
+    padding-bottom: 6%;
+    background: none !important;
+    border-radius: 0;
+    color: gold;
+}
+
+.mission-vision-values .tab-content #vision,
+.mission-vision-values .tab-content #mission,
+.mission-vision-values .tab-content #core {
+    padding-bottom: 6%;
+}
+
+.mission-vision-values .tab-content .mvv-content {
+    padding: 4% 0 0 0;
+}
+
+.contact-us-drop-line {
+    padding: 0;
+}
+
+.contact-us-drop-line .left-div {
+    background: gold;
+    padding: 6% 0 4%;
+}
+
+.contact-us-drop-line .left-div h6 {
+    font-size: 0.8em;
+}
+
+.contact-us-drop-line .right-div {
+    background: #fafafa;
+    padding: 6% 0 4%;
+}
+
+.contact-us-drop-line .right-div .form-div {
+    padding: 1% 1% 1% 3%;
+    margin-bottom: 2%;
+}
+
+.contact-us-drop-line .special-header-div {
+    padding: 1%;
+    margin-bottom: 2%;
+}
+
+.contact-us-drop-line h2 {
+    margin-bottom: 10%;
+}
+
+.contact-us-drop-line h5.follow-us {
+    margin: 10% 0 5%;
+}
+
+.contact-us-drop-line ul li {
+    display: inline-block;
+    margin-right: 5%;
+}
+
+.contact-us-drop-line ul li a {
+    color: #444444;
+    font-size: 0.7em;
+}
+
+.contact-us-drop-line p {
+    margin-bottom: 5%;
+}
+
+.contact-us-drop-line form input, .contact-us-drop-line form textarea {
+    border: none;
+    border-radius: 0;
+    border-bottom: thin solid #aaaaaa;
+    padding-left: 0;
+    margin-bottom: 4%;
+}
+
+.contact-us-drop-line form .form-button {
+    border: thin solid #888888;
+    border-radius: 0;
+    color: #000000;
+    padding: 2% 6%;
+    background: #fcfcfc;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.show-posts-studies {
+    padding: 0;
+}
+
+.show-posts-studies .wrapper {
+    padding: 0.8% 0;
+    font-size: 0.88em;
+}
+
+.show-posts-studies .wrapper .dropdown-menu {
+    padding: 2% 0;
+}
+
+.show-posts-studies .wrapper .dropdown-menu li {
+    font-size: 0.9em;
+    padding: 2% 6%;
+    margin: 0;
+}
+
+.show-posts-studies .wrapper .dropdown-menu li:hover {
+    background: #f0f0f0;
+}
+
+.show-posts-studies .wrapper .dropdown-menu li a {
+    text-decoration: none;
+}
+
+.show-posts-studies ul.nav-pills li {
+    margin-right: 10%;
+}
+
+.show-posts-studies ul.nav-pills li a {
+    color: #888888;
+}
+
+.show-posts-studies ul li a.active {
+    font-weight: bolder;
+    background: #ffffff !important;
+    color: #000000 !important;
+}
+
+.show-posts-studies .dropdown button {
+    background: #ffffff;
+    border: thin solid #aaaaaa;
+}
+
+.show-posts-studies .tab-content {
+    padding: 0;
+}
+
+.show-posts-studies .tab-content .section {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    border: thin solid #343a40;
+    padding: 0.05% 1.3%;
+    font-size: 0.8em;
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.show-posts-studies .tab-content .big-outer-div .image-div {
+    position: absolute;
+    bottom: 2%;
+    left: 4%;
+}
+
+.show-posts-studies .tab-content .small-outer-div .image-div {
+    position: absolute;
+    bottom: 2%;
+    left: 8%;
+}
+
+.show-posts-studies .tab-content .image-div .desc {
+    font-size: 0.7em;
+}
+
+.show-posts-studies .top-row, .show-posts-studies .bottom-row {
+    padding: 0;
+}
+
+.show-posts-studies .top-row .big-outer-div {
+    padding: 0;
+    border-right: medium solid #ffffff;
+    border-bottom: medium solid #ffffff;
+}
+
+.show-posts-studies .top-row .small-outer-div {
+    padding: 0;
+    border-left: medium solid #ffffff;
+    border-bottom: medium solid #ffffff;
+}
+
+.show-posts-studies .bottom-row .big-outer-div {
+    padding: 0;
+    border-left: medium solid #ffffff;
+    border-top: medium solid #ffffff;
+}
+
+.show-posts-studies .bottom-row .small-outer-div {
+    padding: 0;
+    border-right: medium solid #ffffff;
+    border-top: medium solid #ffffff;
+}
+
+.show-posts-studies .tab-content .big-outer-div,
+.show-posts-studies .tab-content .small-outer-div {
+    position: relative;
+    color: #ffffff;
+}
+
+.show-posts-studies .tab-content .big-outer-div img,
+.show-posts-studies .tab-content .small-outer-div img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 0;
+}
+
+/*********************Insights page *******************************/
+#insight-container {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/insight-back.png") no-repeat;
+}
+
+.work-with-us {
+    padding: 6.5% 0 14%;
+}
+
+.work-with-us button {
+    background: #000000;
+    padding: 0.7% 1.4%;
+    color: #ffffff;
+    border: none;
+}
+
+.insight-join {
+    background: #ffffff;
+    position: relative;
+    padding: 0;
+}
+
+.insight-join .wrapper {
+    padding: 2% 3%;
+    border-top: thin solid gold;
+    background: #ffffff;
+    position: absolute;
+    z-index: 99999;
+    top: 0;
+    transform: translateY(-50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.insight-join h6 {
+    font-size: 1em;
+}
+
+.insight-join .join-btn {
+    border: thin solid #888888;
+    border-radius: 0;
+    color: #000000;
+    padding: 3% 5%;
+    background: #fcfcfc;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.insight-join a .fa {
+    color: #000000;
+}
+
+.insight-join ul li {
+    display: inline;
+    padding: 0 6%;
+    font-size: 1.3em;
+}
+
+.home-container .active, .about-container .active {
+    border-bottom: thin solid gold;
+    padding-bottom: 0;
+    background: none !important;
+    border-radius: 0;
+    display: inline-block;
+}
+
+.bg--dark {
+    background-color: #000000;
+}
+
+.bg--light {
+    background: #ffffff;
+}
+
+.bg--off--white {
+    background: #fafafa;
+}
+
+.text--white {
+    color: #ffffff;
+}
+
+.text--black {
+    color: #000000;
+}
+
+/******************** BUTTONS ***************************/
+.bordered {
+    border: thin solid #888888;
+    border-radius: 0;
+}
+
+.borderless{
+    border: none;
+    border-radius: 0;
+}
+
+.custom-btn{
+    padding: 2% 8%;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.newsletter-btn{
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.btn-black-on-white{
+    color: #000000;
+    background: #ffffff;
+}
+
+btn-black-on-yellow{
+    background: gold;
+    color: #000000;
+}
+
+.btn-white-on-black{
+    color: #ffffff;
+    background: #000000;
+}
+
+.btn-black-on-gold{
+    color: #000000;
+    background: gold;
+}
+
+
+.people-pro-pro {
+    padding-bottom: 4%;
+}
+
+
+.people-pro-pro .manage {
+    padding: 5% 0 0.5%;
+    background: #ffffff;
+}
+
+.people-pro-pro .manage a {
+    text-decoration: none;
+    display: block;
+}
+
+.people-pro-pro .manage .content-div {
+    padding-top: 2%;
+}
+
+.people-pro-pro .manage .content-div:hover,
+.people-pro-pro .manage .content-div:focus {
+    background: gold;
+}
+
+.people-pro-pro .manage a h5 {
+    font-size: 1em;
+    color: #000000;
+}
+
+.people-pro-pro .manage p {
+    color: #000000;
+}
+
+.newsletter {
+    background: #ffffff;
+    position: relative;
+    padding: 0;
+}
+
+.newsletter .wrapper {
+    padding: 2% 3%;
+    border-top: thin solid gold;
+    background: #ffffff;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    transform: translateY(-50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.newsletter h6{
+    font-size: 0.8em;
+}
+
+.looking-to-recruit{
+    background: #000000;
+    color: #ffffff;
+    padding: 4% 0;
+}
+
+.looking-to-recruit p{
+    font-size: 0.9em;
+}
+
+.looking-to-recruit button{
+    border: thin solid black;
+    font-size: 0.9em;
+    padding: 1%;
+}
+
+@media only screen and (max-width: 830px) {
+    .home-nav .navbar-dark .navbar-nav li.s-media {
+        display: inline !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .home-container .page-jumbo, .about-container .page-jumbo{
+        top: 0;
+    }
+
+    .about-container {
+        background-position: left center;
+    }
+
+    .fixed-top{
+        position: static;
+    }
+
+    .special-header-div .special-header span {
+        font-size: 0.79em;
+    }
+
+    .show-posts-studies .top-row .big-outer-div,
+    .show-posts-studies .top-row .small-outer-div,
+    .show-posts-studies .bottom-row .big-outer-div,
+    .show-posts-studies .bottom-row .small-outer-div {
+        border: thin solid #ffffff;
+    }
+
+    .show-posts-studies .image-div h4 {
+        font-size: 0.9em;
+    }
+
+    .show-posts-studies .image-div h6 {
+        font-size: 0.8em;
+    }
+
+    .bg--off--white {
+        background: #fafafa;
+    }
+
+    .team-gallery .wrapper {
+        box-shadow: none;
+        position: relative;
+        transform: translateY(0);
+        padding: 2% 0;
+    }
+
+    .team-gallery .wrapper .outer {
+        padding: 0 2%;
+        background: #ffffff;
+        width: 50%;
+    }
+
+    .mission-vision-values .tab-content .mvv-content p {
+        font-size: 0.9em;
+    }
+
+    .mission-vision-values .tab-content .mvv-title h4 {
+        font-size: 1em;
+    }
+
+    .mission-vision-values ul li {
+        padding-bottom: 0;
+    }
+
+    .mission-vision-values ul li a {
+        display: inline-block;
+        padding-bottom: 0 !important;
+        margin-bottom: 4%;
+        font-size: 0.9em;
+    }
+
+    .contact-us-drop-line h2 {
+        margin-bottom: 7%;
+        font-size: 1.4em;
+        font-weight: bolder;
+    }
+
+    .contact-us-drop-line p {
+        font-size: 0.9em;
+    }
+
+    .contact-us-drop-line form .form-button {
+        padding: 1% 3%;
+        font-size: 0.85em;
+    }
+
+    .contact-us-drop-line .left-div {
+        padding-left: 3%;
+    }
+
+    .contact-us-drop-line .right-div {
+        padding-left: 3%;
+    }
+
+    .contact-us-drop-line h5.follow-us {
+        margin: 10% 0 5%;
+    }
+
+    .contact-us-drop-line ul li a {
+        font-size: 0.7em;
+    }
+
+    .meet-the-team {
+        padding-bottom: 10%;
+    }
+
+    .meet-the-team .title-div h5 {
+        padding-left: 3%;
+    }
+
+    .meet-the-team .title-div p {
+        padding-left: 6%;
+        font-size: 1.2em;
+        padding-bottom: 2%;
+    }
+
+    .meet-the-team .content-wrapper {
+        padding-left: 6%;
+    }
+
+    .meet-the-team .content-wrapper p {
+        font-size: 0.9em;
+    }
+
+    .about-who-we-are .col-sm-10 {
+        padding-left: 3%;
+    }
+
+    .about-who-we-are .title-div {
+        font-size: 1.4em;
+    }
+
+    .about-who-we-are p {
+        font-size: 0.9em;
+    }
+
+    .newsletter .wrapper {
+        position: relative;
+        transform: translateY(0);
+        padding-left: 5%;
+    }
+
+    .newsletter .wrapper .sect {
+        margin-bottom: 6%;
+    }
+
+    .newsletter .newsletter-btn{
+        margin-top: -4%;
+    }
+
+    .newsletter .wrapper h6 {
+        font-size: 0.8em;
+    }
+
+    .newsletter .wrapper .title {
+        font-size: 0.9em;
+        text-align: right;
+    }
+
+    .small-footer .socials .fa {
+        font-size: 0.85em;
+    }
+
+    .newsletter .wrapper div {
+        padding: 0;
+    }
+
+    .small-footer .socials ul li {
+        padding-left: 0;
+    }
+
+    .insight-join .wrapper {
+        position: relative;
+        transform: translateY(0);
+        padding: 8% 0 10% 5%;
+    }
+
+    .insight-join .wrapper h6 {
+        font-size: 1em;
+    }
+
+    .insight-join .wrapper .title {
+        font-size: 0.7em;
+    }
+
+    .insight-join .wrapper .fa {
+        font-size: 0.85em;
+    }
+
+    .insight-join .wrapper div {
+        padding: 0;
+    }
+
+    .footer-request-btn {
+        padding: 2.8% 3%;
+        font-size: 0.7em;
+    }
+
+    .send-brief-btn {
+        padding: 3% 4%;
+        font-size: 0.7em;
+    }
+
+    .get-in-touch-btn {
+        padding: 2% 4% !important;
+        font-size: 0.8em;
+    }
+
+    .custom-btn{
+        padding: 2% 4% !important;
+        font-size: 0.8em;
+    }
+
+    .page-jumbo .col-sm-8 {
+        border-left: none;
+    }
+
+    .mission-vision-values ul li, .show-posts-studies ul.nav-pills li {
+        width: 100%;
+    }
+
+    .show-posts-studies .tab-content .col-sm-3 img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .show-posts-studies ul.nav-pills li a {
+        font-size: 0.9em;
+    }
+
+    .show-posts-studies .dropdown .title {
+        font-size: 0.9em;
+    }
+
+    .people-pro-pro .manage{
+        padding-left: 3% !important;
+    }
+
+    .people-pro-pro .manage .content-div{
+        border-right: none;
+    }
+
+    .home-who-we-are .col-sm-10 {
+        padding-left: 3%;
+    }
+
+    .home-who-we-are .content-div {
+        margin-bottom: 2%;
+    }
+
+    .home-who-we-are .title-div {
+        border-right: none;
+        font-size: 1.3em;
+        margin-bottom: 2%;
+    }
+
+    .people-pro-pro {
+        padding: 0;
+    }
+
+    .people-pro-pro .absolute-parent .fa-users,
+    .people-pro-pro .absolute-parent .fa-product-hunt,
+    .people-pro-pro .absolute-parent .fa-folder {
+        font-size: 3em;
+    }
+
+    .people-pro-pro ul li a {
+        padding: 4% 2%;
+        font-size: 0.85em;
+    }
+
+    .people-pro-pro .manage {
+        padding: 10% 0 4%;
+    }
+
+    .people-pro-pro .manage .tab-content {
+        padding: 0;
+    }
+
+    .people-pro-pro .manage .col-sm-10 {
+        padding-left: 3%;
+    }
+
+    .people-pro-pro .manage .title-div {
+        border-right: none;
+    }
+
+    .people-pro-pro .manage .title-div p {
+        font-size: 1.4em;
+    }
+
+    .people-pro-pro .learn {
+        text-align: center;
+    }
+
+    .people-pro-pro .absolute-parent .wrapper {
+        position: relative;
+        transform: translateY(0);
+        box-shadow: none;
+    }
+
+    .home-who-we-are .learn-more-btn {
+        padding: 2% 3%;
+        font-size: 0.85em;
+    }
+
+    .consulting-services .col-sm-10 {
+        padding-left: 3%;
+    }
+
+    .consulting-services .button-div {
+        text-align: center;
+    }
+
+    .consulting-services .services h4 {
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .consulting-services .services ul {
+        margin-bottom: 8%;
+    }
+
+    .main-footer {
+        padding-top: 6%;
+    }
+
+    .main-footer .wrapper {
+        padding-left: 5%;
+    }
+
+    .main-footer .wrapper .sect{
+        padding-left: 0;
+    }
+
+    .main-footer .logo-div {
+        margin-bottom: 5%;
+    }
+
+    .main-footer .get-in-touch, .main-footer .quick-links {
+        margin-bottom: 3%;
+    }
+
+    .main-footer ul li, .main-footer ul li a {
+        font-size: 0.9em;
+    }
+
+    .small-footer {
+        font-size: 0.7em;
+    }
+}

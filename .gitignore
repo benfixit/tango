@@ -1,0 +1,7 @@
+# IDE: PHPStorm
+/.idea
+.phpstorm.meta.php
+.env
+/storage
+/vendor
+/public/index.php
